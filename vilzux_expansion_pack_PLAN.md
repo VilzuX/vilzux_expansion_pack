@@ -30,8 +30,8 @@
 | 1 | Veikkausliiga | Finland | ✅ | ⏳ (post-FL27) | ⏳ | ⏳ | Research complete |
 | 2 | Allsvenskan | Sweden | ✅ | ⏳ (post-FL27) | ⏳ | ⏳ | Research complete |
 | 3 | Eliteserien | Norway | ✅ | ⏳ (post-FL27) | ⏳ | ⏳ | Research complete |
-| 4 | Superliga | Denmark | ⏳ | ⏳ | ⏳ | ⏳ | Not started |
-| 5 | SuperLiga | Serbia | ⏳ | ⏳ | ⏳ | ⏳ | Not started |
+| 4 | Superliga | Denmark | ✅ N/A | N/A | N/A | N/A | **Already in FL26 — skip** |
+| 5 | SuperLiga | Serbia | ✅ | ⏳ (post-FL27) | ⏳ | ⏳ | Research complete |
 | 6 | HNL | Croatia | ⏳ | ⏳ | ⏳ | ⏳ | Not started |
 | 7 | Ekstraklasa | Poland | ⏳ | ⏳ | ⏳ | ⏳ | Not started |
 | 8 | Chance Liga | Czech Republic | ⏳ | ⏳ | ⏳ | ⏳ | Not started |
@@ -154,4 +154,51 @@ Defending champions: Viking FK (2025 title).
 
 ---
 
-*(Leagues 4–12 to be added one at a time, same format, as we work through the list.)*
+---
+
+### 5. Serbia — SuperLiga ✅
+
+**Tier & size:** Top tier. **⚠️ CRITICAL — League is actively shrinking:**
+- 2025–26 season: **16 teams** (current season)
+- 2026–27 season: **14 teams** (four relegated from 2025-26, two promoted)
+- 2027–28 season: **12 teams** (planned further reduction)
+
+Since FL27 launches around October 2026, it will almost certainly ship with the **2026-27 season data — 14 teams, not 16**. Plan the implementation around 14 teams. Do not build a 16-team slot and expect it to match real-world data.
+
+**2025–26 clubs (16, current season — for reference):**
+Red Star Belgrade, Partizan, Vojvodina, Radnički Niš, TSC Bačka Topola, OFK Beograd, Spartak Subotica, Čukarički, Mladost Lučani, FK Novi Pazar, Napredak Kruševac, Radnički 1923, Kolubara, FK Inđija, Radnik Surdulica, Javor-Matis.
+⚠️ For the 2026-27 14-team list, pull fresh data once FL27 launches — four clubs will have been relegated.
+
+**Season format:** Double round-robin regular season (30 games each), then **split** into two groups of 8: a Championship Round (top 8, playing for title and UEFA spots) and a Relegation Round (bottom 8, playing to avoid drop). Points carried forward from the regular season.
+⚠️ This is the second split-season format we've encountered after Finland. Same engine limitation applies — implement as straight round-robin unless proven otherwise. When the league reduces to 14 the format may also change; re-check before implementing.
+
+**Promotion/relegation (2026-27 structure, 14 teams):**
+- Bottom two automatically relegated.
+- 13th and 14th enter play-offs against 3rd and 4th from the Serbian First League.
+- Serbian First League's top two automatically promoted.
+- 2nd tier: Serbian First League (Prva Liga Srbije).
+
+**Domestic cup:** Serbian Cup (Kup Srbije).
+
+**UEFA qualification:**
+- Champion → Champions League qualifying (playoff round — strong entry point).
+- Runner-up → Champions League qualifying (second qualifying round).
+- 3rd place → Conference League qualifying (third qualifying round).
+- 4th place → Conference League qualifying (second qualifying round).
+- Serbian Cup winner → Europa League qualifying (playoff round).
+- Total: **2 CL + 1 EL + 2 ECL = 5 UEFA slots** — the most generous allocation of any league in our list so far, reflecting Serbia's historically strong UEFA coefficient (currently ranked 13th in Europe out of 55 leagues).
+
+**Derbies to include:**
+- **Večiti derbi (The Eternal Derby): Red Star Belgrade vs Partizan Belgrade** — unambiguously one of the most intense derbies in world football. Both clubs formed in 1945, stadiums less than 1km apart in south Belgrade, have won every Serbian SuperLiga title since 1992 bar one. Red Star's ultras are called the Delije; Partizan's are the Grobari (Gravediggers). Described as "one of European football's most bitter rivalries" — ranked in multiple global top-10 lists. This is the headline fixture of the entire expansion pack; maximum rival weight in-game.
+- ⚠️ Other Serbian derbies (e.g. Vojvodina vs Spartak Subotica — Vojvodinian derby) exist but are secondary and regional. Wire them only if both clubs are in the 14-team setup at implementation time.
+
+**Stadiums:**
+- Rajko Mitić Stadium ("Marakana") — Red Star Belgrade, one of the most recognisable grounds in Eastern Europe.
+- Partizan Stadium — Partizan Belgrade, located under 1km from Marakana.
+- Not yet cross-checked against FL26's default list — pending Asset Inventory pass.
+
+**Kits/badges:** Not yet sourced — pending your input on existing assets. Note: Red Star and Partizan are well-known clubs — community kit packs for both are widely available.
+
+---
+
+*(Leagues 6–12 to be added one at a time, same format, as we work through the list.)*
