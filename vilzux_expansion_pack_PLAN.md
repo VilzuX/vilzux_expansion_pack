@@ -32,7 +32,7 @@
 | 3 | Eliteserien | Norway | ✅ | ⏳ (post-FL27) | ⏳ | ⏳ | Research complete |
 | 4 | Superliga | Denmark | ✅ N/A | N/A | N/A | N/A | **Already in FL26 — skip** |
 | 5 | SuperLiga | Serbia | ✅ | ⏳ (post-FL27) | ⏳ | ⏳ | Research complete |
-| 6 | HNL | Croatia | ⏳ | ⏳ | ⏳ | ⏳ | Not started |
+| 6 | HNL | Croatia | ✅ | ⏳ (post-FL27) | ⏳ | ⏳ | Research complete |
 | 7 | Ekstraklasa | Poland | ⏳ | ⏳ | ⏳ | ⏳ | Not started |
 | 8 | Chance Liga | Czech Republic | ⏳ | ⏳ | ⏳ | ⏳ | Not started |
 | 9 | Niké Liga | Slovakia | ⏳ | ⏳ | ⏳ | ⏳ | Not started |
@@ -201,4 +201,50 @@ Red Star Belgrade, Partizan, Vojvodina, Radnički Niš, TSC Bačka Topola, OFK B
 
 ---
 
-*(Leagues 6–12 to be added one at a time, same format, as we work through the list.)*
+---
+
+### 6. Croatia — HNL (SuperSport Hrvatska nogometna liga) ✅
+
+**Tier & size:** Top tier, **10 clubs** — the smallest league in our entire expansion pack. This has important engine implications (see format note below).
+
+**2025–26 clubs (confirmed 10-team roster):**
+GNK Dinamo Zagreb, HNK Hajduk Split, HNK Rijeka, NK Osijek, NK Lokomotiva Zagreb, NK Varaždin, HNK Gorica, NK Slaven Belupo (Koprivnica), NK Istra 1961, NK Vukovar 1991 (promoted for first time in club history).
+Defending champions: GNK Dinamo Zagreb (2025–26 title, their 25th HNL title overall).
+
+**Season format: ⚠️ NEW ENGINE LIMITATION — QUADRUPLE round-robin.**
+With only 10 teams, each club plays every opponent **4 times** (twice home, twice away) = **36 matches per team**. This is how the HNL compensates for having so few clubs — it fills the calendar with extra fixtures rather than expanding the number of teams.
+
+The PES competition engine supports double round-robin (home + away = 2 matches per opponent) natively. A quadruple format almost certainly cannot be configured in the standard engine without advanced Sider scripting — and there's no confirmed community workaround for this.
+
+**Recommended implementation approach:** Implement as a standard **double round-robin (18 matches per team)**, accepting the reduced match count. The fixture count difference is noticeable but unavoidable without the quadruple round-robin. Make a note in the mod's documentation. This is the cleanest stable option. Do NOT try to add extra rounds — this risks instability.
+
+**Promotion/relegation:**
+- 10th place automatically relegated to Prva NL (2nd tier).
+- 9th place enters a two-legged playoff against 3rd place from the Prva NL — winner stays/enters HNL.
+- Prva NL champion is automatically promoted.
+- 2nd tier: Prva NL (SuperSport Prva Nogometna Liga).
+
+**Domestic cup:** Croatian Football Cup (Hrvatski nogometni kup).
+
+**UEFA qualification:**
+- Champion → CL second qualifying round (champions path).
+- Runner-up (2nd) and 3rd → Conference League qualifying.
+- Croatian Cup winner → Europa League second qualifying round.
+- Cascade rule: if Cup winner already qualified via league position, the EL spot moves to 2nd place, and the spare ECL spot moves to 4th place.
+- Total: **1 CL + 1 EL + 2 ECL = 4 UEFA slots** (subject to cascade).
+
+**Derbies to include:**
+- **Vječni derbi / Eternal Derby: Dinamo Zagreb vs Hajduk Split** — the Croatian equivalent of the Eternal Derby in Serbia. Part of the historic Yugoslav "Big Four" alongside Red Star and Partizan. The rivalry traces to the 1920s, intensified post-independence in 1991. Dinamo's ultras are the Bad Blue Boys (BBB); Hajduk's are the Torcida — one of the oldest ultras groups in Europe (founded 1950, older than most Italian groups). Hajduk have 100,000+ members, making them one of Europe's largest fan-owned clubs. Classified as a high-risk event by police; over 100 fans detained in 2025 before a fixture in Split. Maximum rival weight in-game.
+- **Dinamo Zagreb vs Rijeka** — secondary but growing rivalry, especially fierce during the 2010s when Rijeka challenged Dinamo's dominance. Rijeka won their first Croatian title in 2016–17, breaking years of Dinamo/Hajduk hegemony. Worth including as a second-tier rivalry.
+- ⚠️ Note that Dinamo Zagreb is also historically rival with Serbian clubs Red Star and Partizan from the Yugoslav era — not relevant for domestic implementation, but worth knowing when wiring cross-competition encounters in the Conference League/Europa League later.
+
+**Stadiums:**
+- Stadion Maksimir — Dinamo Zagreb, Zagreb (capacity ~35,000).
+- Stadion Poljud — Hajduk Split, Split (capacity ~33,987). Record HNL attendance: 38,000 for a Dinamo vs Hajduk match.
+- Not yet cross-checked against FL26's default list — pending Asset Inventory pass. Maksimir and Poljud are among the most recognisable grounds in the Balkans; community stadium packs likely exist for both.
+
+**Kits/badges:** Not yet sourced — pending your input on existing assets. Dinamo and Hajduk are well-known clubs with widely available kit packs.
+
+---
+
+*(Leagues 7–12 to be added one at a time, same format, as we work through the list.)*
