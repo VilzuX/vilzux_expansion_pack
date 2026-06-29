@@ -29,7 +29,7 @@
 |---|--------|---------|----------|-----------|----------|-----------|--------|
 | 1 | Veikkausliiga | Finland | ✅ | ⏳ (post-FL27) | ⏳ | ⏳ | Research complete |
 | 2 | Allsvenskan | Sweden | ✅ | ⏳ (post-FL27) | ⏳ | ⏳ | Research complete |
-| 3 | Eliteserien | Norway | ⏳ | ⏳ | ⏳ | ⏳ | Not started |
+| 3 | Eliteserien | Norway | ✅ | ⏳ (post-FL27) | ⏳ | ⏳ | Research complete |
 | 4 | Superliga | Denmark | ⏳ | ⏳ | ⏳ | ⏳ | Not started |
 | 5 | SuperLiga | Serbia | ⏳ | ⏳ | ⏳ | ⏳ | Not started |
 | 6 | HNL | Croatia | ⏳ | ⏳ | ⏳ | ⏳ | Not started |
@@ -115,4 +115,43 @@ Tracked separately once dossiers are far enough along: UEFA Conference League in
 
 ---
 
-*(Leagues 3–12 to be added one at a time, same format, as we work through the list.)*
+### 3. Norway — Eliteserien ✅
+
+**Tier & size:** Top tier, 16 clubs (season runs March–December, unusually long to accommodate Scandinavian winter).
+
+**2026 clubs (confirmed):**
+Aalesunds FK, SK Brann, FK Bodø/Glimt, Fredrikstad FK, HamKam, KFUM Oslo, Kristiansund BK, Lillestrøm SK, Molde FK, Rosenborg BK, Sandefjord Fotball, Sarpsborg 08, IK Start, Tromsø IL, Vålerenga IF, Viking FK.
+Defending champions: Viking FK (2025 title).
+
+**Season format:** Straight double round-robin — 30 matches each, 240 league-wide. No split format. Straightforward engine implementation — same as Allsvenskan.
+
+**Promotion/relegation:**
+- Bottom two (15th, 16th) automatically relegated to the Norwegian First Division.
+- 14th-placed team plays a two-legged playoff against the runner-up of the First Division promotion playoffs — winner stays/enters Eliteserien.
+- Top two from the First Division are automatically promoted.
+- 2nd tier: Norwegian First Division (also known as OBOS-ligaen for sponsorship reasons).
+
+**Domestic cup:** Norwegian Football Cup (Norges Fotballcup). 
+⚠️ The cup winner earns the title of "Norwegian Champions" — distinct from the league winner — a cultural detail worth noting even if the in-game implementation can't reflect it directly.
+
+**UEFA qualification (confirmed from ESPN/Sofascore for current cycle):**
+- 1st and 2nd → Champions League qualifying.
+- 3rd → Europa League qualifying.
+- 4th → Conference League qualifying.
+- Norwegian Cup winner likely also earns a UEFA slot (verify exact path before final implementation).
+- Total: roughly **4 UEFA slots (2 CL + 1 EL + 1 ECL)** — notably more CL slots than Finland/Sweden, reflecting Norway's stronger UEFA coefficient.
+
+**Derbies to include:**
+- **Rosenborg vs Molde** — "Marathon of the North," the headline rivalry of the modern era. Rosenborg (Trondheim) vs Molde; both consistent title contenders since the 2010s.
+- **Vålerenga vs Lillestrøm** — fierce Oslo-area derby. Strong supporter culture on both sides; Vålerenga ultras famously beheaded a statue of a Lillestrøm legend at some point (noted as a detail of the intensity, not to celebrate). Both clubs in Eliteserien 2026.
+- **KFUM Oslo vs Vålerenga** — both in the 2026 season, making the Oslo derby an active fixture this year.
+- **Rosenborg vs Vålerenga** — inter-city rivalry between Norway's most-titled club (26 championships) and the capital's biggest club.
+- ⚠️ Brann (Bergen) vs Vålerenga (Oslo) also carries rivalry weight — geographically a west/east clash — worth including if both stay top-flight long-term.
+
+**Stadiums:** Not yet cross-checked against FL26's default list — pending Asset Inventory pass. Notable grounds: Lerkendal Stadion (Rosenborg, ~21,400 cap), Brann Stadion (~17,700), Intility Arena (Vålerenga), Aspmyra Stadion (Bodø/Glimt, ~8,000 — intimate atmosphere, consistently unsettles opponents at home).
+
+**Kits/badges:** Not yet sourced — pending your input on existing assets.
+
+---
+
+*(Leagues 4–12 to be added one at a time, same format, as we work through the list.)*
