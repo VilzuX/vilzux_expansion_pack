@@ -33,7 +33,7 @@
 | 4 | Superliga | Denmark | ✅ N/A | N/A | N/A | N/A | **Already in FL26 — skip** |
 | 5 | SuperLiga | Serbia | ✅ | ⏳ (post-FL27) | ⏳ | ⏳ | Research complete |
 | 6 | HNL | Croatia | ✅ | ⏳ (post-FL27) | ⏳ | ⏳ | Research complete |
-| 7 | Ekstraklasa | Poland | ⏳ | ⏳ | ⏳ | ⏳ | Not started |
+| 7 | Ekstraklasa | Poland | ✅ | ⏳ (post-FL27) | ⏳ | ⏳ | Research complete |
 | 8 | Chance Liga | Czech Republic | ⏳ | ⏳ | ⏳ | ⏳ | Not started |
 | 9 | Niké Liga | Slovakia | ⏳ | ⏳ | ⏳ | ⏳ | Not started |
 | 10 | PrvaLiga | Slovenia | ⏳ | ⏳ | ⏳ | ⏳ | Not started |
@@ -247,4 +247,52 @@ The PES competition engine supports double round-robin (home + away = 2 matches 
 
 ---
 
-*(Leagues 7–12 to be added one at a time, same format, as we work through the list.)*
+---
+
+### 7. Poland — Ekstraklasa ✅
+
+**Tier & size:** Top tier, **18 clubs** — the largest league in our entire expansion pack alongside Romania. Also the most historically deep, with the 2025–26 season being the **100th season of the Polish Football Championship**.
+
+**2025–26 clubs (18 confirmed):**
+Lech Poznań, Jagiellonia Białystok, Górnik Zabrze, Legia Warsaw, Raków Częstochowa, Pogoń Szczecin, Zagłębie Lubin, Widzew Łódź, Cracovia, GKS Katowice, Radomiak Radom, Ruch Chorzów, Korona Kielce, Piast Gliwice, Wisła Płock, Arka Gdynia, Bruk-Bet Termalica Nieciecza, Lechia Gdańsk.
+2025–26 champions: **Lech Poznań** (second consecutive title, their 10th overall).
+
+**2026–27 clubs (confirmed changes for FL27 data):**
+IN: Wisła Kraków (promoted after 4-year absence), Śląsk Wrocław (promoted after 1 year), Wieczysta Kraków (promoted for the first time in club history — will be in Ekstraklasa for the first time ever).
+OUT: Bruk-Bet Termalica Nieciecza, Arka Gdynia, Lechia Gdańsk (all relegated).
+⚠️ Notable: For 2026–27, Kraków will have **three clubs in the top flight** simultaneously (Wisła, Cracovia, Wieczysta) — the first time since 1994–95. This is historically significant and means the Kraków Holy War derby will be active again at Ekstraklasa level when FL27 launches.
+
+**Season format:** Standard double round-robin — **34 matches per team**, 18 clubs × 17 opponents × 2 = 306 total league matches. No split format (they used one from 2013–2020 but reverted to a single table). Clean, straightforward engine implementation — the largest slot we'll need to fill but no format complications.
+
+**Promotion/relegation:**
+- Bottom three (16th, 17th, 18th) automatically relegated to I liga.
+- I liga: Top two automatically promoted; 3rd–6th place enter a mini-playoff for a third promotion spot.
+- 2nd tier: Betclic I liga (18 clubs, also double round-robin).
+
+**Domestic cup:** Polish Cup (Puchar Polski).
+
+**UEFA qualification:**
+- Champion (1st) → Champions League qualifying.
+- 2nd and 3rd → Conference League qualifying.
+- Polish Cup winner → additional UEFA slot (typically ECL or EL depending on coefficient).
+- If the Cup winner already qualified via league, the spot cascades down the table.
+- Total: **1 CL + up to 3 ECL = roughly 4 UEFA slots.** Poland's coefficient is rising sharply — in 2025–26 four Polish clubs represented in major European competition simultaneously for the first time since 2002–03, and Jagiellonia Białystok and Legia Warsaw both reached Conference League quarter-finals.
+
+**Derbies to include:**
+- **Derby of Poland: Legia Warsaw vs Lech Poznań** — the headline national rivalry. Poland's two most successful clubs from rival cities (Warsaw vs Poznań), each representing contrasting identities. Notoriously violent fixture history; flares on pitch, multiple bans. Both clubs consistently in Ekstraklasa.
+- **Święta Wojna (Holy War): Wisła Kraków vs Cracovia** — considered the fiercest and oldest derby in Poland, first contested in 1908. 200+ official encounters. Described as one of the most intense in Central Europe. Deeply rooted in Kraków's cultural and social history. ✅ **Both clubs are confirmed in 2026–27 Ekstraklasa** — actively wire this at maximum intensity.
+- **Great Silesian Derby: Górnik Zabrze vs Ruch Chorzów** — most frequently contested Polish derby (120+ official matches). Upper Silesian regional identity, mining community roots. Both clubs in 2025–26; verify Ruch's status for 2026–27 before wiring.
+- **Łódź Derby: ŁKS Łódź vs Widzew Łódź** — fierce central-Poland industrial rivalry. Check both clubs' divisional status for 2026–27 before wiring (ŁKS currently in I liga).
+- ⚠️ Wieczysta Kraków's first-ever Ekstraklasa season in 2026–27 will create a brand-new derby dynamic with both Wisła and Cracovia in the same city. Worth noting for atmosphere/rival assignment even if Wieczysta has no historic rivalry weight yet.
+
+**Stadiums:**
+- Stadion Wojska Polskiego (Polish Army Stadium) — Legia Warsaw (~31,800 cap).
+- INEA Stadion — Lech Poznań (~41,609 cap, largest stadium in our entire expansion pack and one of the biggest in Central Europe).
+- Synerise Arena Kraków — Wisła Kraków (~33,130).
+- Not yet cross-checked against FL26's default list — pending Asset Inventory pass.
+
+**Kits/badges:** Not yet sourced — pending your input on existing assets. Legia and Lech are well-known internationally; community kit packs widely available. Wisła Kraków kits should also be findable.
+
+---
+
+*(Leagues 8–12 to be added one at a time, same format, as we work through the list.)*
