@@ -33,7 +33,30 @@
 
 ---
 
-## League rollout order & status
+## Next concrete step: Tool Sandbox Setup
+
+**What we're changing:** Nothing in your real install yet. We create a second, fully separate copy of FL26 — a sandbox — and get PES Editor installed and opening its database successfully. No competition, team, or stadium data gets touched yet.
+
+**Why it's necessary:** Every future task in this project — testing a kit import, learning the competition table layout, even just clicking around PES Editor for the first time — needs somewhere safe to happen. Doing it in your real install risks your actual save data. This was always step zero of Phase 0; we just got pulled into research before circling back to it.
+
+**Correction to my earlier tool answer:** I originally listed Sider as something to "install." That's not quite right — **Sider already ships bundled inside FL26** (SmokePatch uses it as their core content-swapping engine), so there's nothing separate to install there, just something to learn. I also originally put CriPackedFileMaker in the "set up now" bucket — on reflection, that tool matters for final packaging/distribution, not for sandbox exploration, so it can wait. That leaves one genuinely new tool to install right now: **PES Editor (ejogc327)**.
+
+**Tools required:**
+- **PES Editor (ejogc327)** — official source: `ejogc327.blogspot.com`. ⚠️ Important nuance I confirmed: the *base* tool is free, but **editing the actual EDIT/option file specifically requires a donation** to unlock — and the EDIT file is exactly what FL26's competition/team/stadium data lives in. Budget for this before assuming the free tier covers what we need. Avoid third-party reposts (ModdingWay, Cao Cacao, etc.) for the tool itself — even where they link back honestly to the official source, go to the official blog directly to avoid bundled extras.
+- A file archiver (WinRAR, per SmokePatch's own install notes) for extracting FL26 if you're duplicating from a fresh download rather than an existing install.
+
+**Files/folders affected:**
+- Your **entire FL26 install folder**, duplicated to a new location (e.g. `FL26_Sandbox` alongside your real `FL26_Main`). FL26 ships as a self-contained build, so this should just be a full folder copy — confirm the exact mechanics on SmokePatch's own **"Install SP Football Life"** how-to page before assuming, since I can't see your installer's internals.
+- The EDIT/option file inside that sandbox folder (exact filename TBD — you'll see it once you're in the folder).
+- Sider's `content` folder inside the sandbox (for later, once we look at competition modules).
+
+**How to test:** Launch FL26 *from the sandbox copy specifically* — confirm it boots independently of your main install. Then open PES Editor and point it at the sandbox's database files — success here just means "opens without errors," not that anything's been changed.
+
+**How to undo:** This is the appeal of doing it this way — undo is trivial by construction. If anything in the sandbox breaks, **delete the sandbox folder and re-copy it from your main install.** Your real install is never touched, so there's nothing to actually "roll back" in the traditional sense.
+
+**A good first hands-on rep once the sandbox is open:** I found that FL26 officially ships with **three teams explicitly designated by SmokePatch for community editing** — Ceres Negros, Žalgiris Vilnius, and Zamora FC. These exist specifically so users have something safe to practice on without touching licensed clubs. Before doing anything with our 11 leagues, I'd open PES Editor, find one of these three, and just rename/re-badge it as a throwaway exercise — zero risk, and it'll teach you the editor's team-table layout, which is structurally similar to what we'll need for the competition tables later.
+
+
 
 | # | League | Country | Research | IDs Found | DB Wired | Cosmetics | Status |
 |---|--------|---------|----------|-----------|----------|-----------|--------|
