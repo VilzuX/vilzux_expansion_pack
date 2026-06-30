@@ -34,7 +34,7 @@
 | 5 | SuperLiga | Serbia | ✅ | ⏳ (post-FL27) | ⏳ | ⏳ | Research complete |
 | 6 | HNL | Croatia | ✅ | ⏳ (post-FL27) | ⏳ | ⏳ | Research complete |
 | 7 | Ekstraklasa | Poland | ✅ | ⏳ (post-FL27) | ⏳ | ⏳ | Research complete |
-| 8 | Chance Liga | Czech Republic | ⏳ | ⏳ | ⏳ | ⏳ | Not started |
+| 8 | Chance Liga | Czech Republic | ✅ | ⏳ (post-FL27) | ⏳ | ⏳ | Research complete |
 | 9 | Niké Liga | Slovakia | ⏳ | ⏳ | ⏳ | ⏳ | Not started |
 | 10 | PrvaLiga | Slovenia | ⏳ | ⏳ | ⏳ | ⏳ | Not started |
 | 11 | SuperLiga | Romania | ⏳ | ⏳ | ⏳ | ⏳ | Not started |
@@ -295,4 +295,60 @@ OUT: Bruk-Bet Termalica Nieciecza, Arka Gdynia, Lechia Gdańsk (all relegated).
 
 ---
 
-*(Leagues 8–12 to be added one at a time, same format, as we work through the list.)*
+---
+
+### 8. Czech Republic — Chance Liga (Czech First League) ✅
+
+**Tier & size:** Top tier, **16 clubs**. One of the strongest leagues in our expansion pack by UEFA coefficient — Czech Republic currently ranked **10th in Europe** out of 55 associations.
+
+**2025–26 clubs (16 confirmed):**
+Slavia Prague, Sparta Prague, Viktoria Plzeň, Baník Ostrava, Sigma Olomouc, Bohemians 1905, Mladá Boleslav, FK Jablonec, Slovan Liberec, Slovácko, FK Zbrojovka Brno, Dukla Prague, MFK Karviná, FC Fastav Zlín, and others.
+2025–26 champions: **Slavia Prague** (consecutive title; also current titleholders heading into 2026–27).
+
+**2026–27 clubs (confirmed changes):**
+- IN: FC Zbrojovka Brno (2025–26 second division champions, returning after 3-year absence).
+- OUT: FK Dukla Prague (relegated to second division).
+- ⚠️ **MFK Karviná — administrative relegation:** On 15 June 2026, Karviná were administratively relegated by the Czech FA Ethics Committee for alleged match-fixing, despite having won the 2025–26 Czech Cup. They announced an appeal — if confirmed before the season starts, another club replaces them; if not resolved in time, the 2026–27 league runs with only **15 teams**. Monitor this situation before implementing — it directly affects slot count.
+
+**Season format:** ⚠️ **SPLIT FORMAT — third instance in our pack.**
+- Regular season: double round-robin = **30 matches** per team.
+- Then table splits into **three groups:**
+  - Championship group (positions 1–6): single round-robin of 5 extra matches, carrying points forward. Compete for title and European spots.
+  - Middle/Placement group (positions 7–12): single round-robin of 5 extra matches.
+  - Relegation group (positions 13–16): single round-robin of 3 extra matches. 16th directly relegated; 14th and 15th enter play-outs.
+- Total matches for top teams: ~35 per club.
+
+Same engine limitation as Finland and Serbia. **Implement as straight 30-match double round-robin.** The championship/placement/relegation group phase cannot be natively replicated in PES. This is now a confirmed pattern across 3 of our 8 researched leagues — worth adding to the master limitations section.
+
+**Promotion/relegation:**
+- 16th place automatically relegated to Czech National Football League (second tier).
+- 14th and 15th place enter two-legged play-outs against 2nd and 3rd from the second division.
+- Second division champion is automatically promoted.
+- 2nd tier: Chance Národní Liga (Czech National Football League), 16 clubs.
+
+**Domestic cup:** Czech Cup (Pohár FAČR / MOL Cup). Cup winner qualifies for ECL qualifying rounds.
+
+**UEFA qualification:**
+- Champion → Champions League second qualifying round.
+- Runner-up → Europa League qualifying.
+- 3rd place → Conference League qualifying.
+- Cup winner → additional ECL qualifying slot (cascades if already qualified via league).
+- Total: roughly **1 CL + 1 EL + 1–2 ECL = 3–4 UEFA slots.** Exact stages depend on coefficient ranking at time of implementation — Czech Republic's 10th position gives strong entry points.
+
+**Derbies to include:**
+- **Prague Derby (Pražské derby / Derby pražských S): Sparta Prague vs Slavia Prague** — the standout fixture of Czech football and one of Central Europe's defining rivalries. First played 29 March 1896 — over 300 competitive encounters. Often compared to the Scottish Old Firm in terms of cultural weight. Sparta (working class identity, red strip, historically right-leaning fanbase) vs Slavia (academic/bourgeois roots, red-and-white, left-leaning). Both founded in the 1890s less than 1km apart in Prague.
+  ⚠️ **Live context (May 2026):** In their most recent derby, Slavia fans stormed the pitch in the 97th minute (Slavia leading 3–2) and attacked multiple Sparta players. Match abandoned. Slavia's North Stand closed indefinitely, two Slavia players (including top scorer Tomáš Chorý) suspended for the rest of the season and transfer-listed. Disciplinary proceedings ongoing. This is the most intense active situation of any derby in our entire pack — maximum rival weight absolutely justified.
+- **Sparta vs Baník Ostrava** — secondary rivalry, Prague vs the industrial north-east. Worth including as a lower-weight rival pair.
+- ⚠️ Bohemians 1905 (the "Kangaroo" club) have minor derby standing with both Prague clubs — notable for atmosphere, lower intensity than the main Prague derby.
+
+**Stadiums:**
+- Epet Arena (Eden Arena) — Slavia Prague, Prague (~19,370 cap).
+- Fortuna Arena (Letná) — Sparta Prague, Prague (~18,887 cap).
+- Doosan Arena — Viktoria Plzeň, Plzeň (~11,700 cap).
+- Not yet cross-checked against FL26's default list — pending Asset Inventory pass. Both Prague stadiums are modern, well-documented, and community stadium packs likely exist.
+
+**Kits/badges:** Not yet sourced. Slavia, Sparta and Plzeň are all UEFA-regulars — kit packs widely available in the PES/FL community.
+
+---
+
+*(Leagues 9–12 to be added one at a time, same format, as we work through the list.)*
